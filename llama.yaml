@@ -1,0 +1,20 @@
+apiVersion: llamastack.io/v1alpha1
+kind: LlamaStackDistribution
+metadata:
+  name: llamastackdistribution-sample
+spec:
+  replicas: 1
+  server:
+    distribution:
+      name: ollama
+    containerSpec:
+      env:
+      - name: INFERENCE_MODEL
+        value: llama3.2:1b
+      - name: OLLAMA_URL
+        value: http://ollama-server-service.ollama-dist.svc.cluster.local:11434
+      name: llama-stack
+      resources: {}
+    storage:
+      mountPath: /home/lls/.lls
+      size: 20Gi
