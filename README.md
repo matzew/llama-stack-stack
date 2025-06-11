@@ -7,13 +7,13 @@ Describes some experiments w/ the LLama Stack.
 ### Run your (local) K8S
 
 ```shell
-./00-run-k8s.sh
+./hack/00-run-k8s.sh
 ```
 
 ### Run your ollama server
 
 ```shell
-./01-deploy-ollama.sh
+./hack/01-deploy-ollama.sh
 ```
 
 ## The Llama Stack distribution
