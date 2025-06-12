@@ -26,6 +26,8 @@ kubectl apply -f https://raw.githubusercontent.com/llamastack/llama-stack-k8s-op
 
 ### The `LlamaStackDistribution` 
 
+Running the `ollama` distribution:
+
 ```shell
 cat <<-EOF | kubectl apply -f -
 apiVersion: llamastack.io/v1alpha1
