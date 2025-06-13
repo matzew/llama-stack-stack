@@ -5,7 +5,7 @@ With the base distribtion running in Kubernetes, the most straightforward is to 
 ## Kube Port-Forward
 
 ```
-kubectl port-forward --namespace default llamastackdistribution-sample-<xyz-xyz> 8321:8321
+kubectl port-forward service/llamastackdistribution-sample-service 8321:8321
 ```
 
 Now you can access the Llama Stack distribution via localhost, for testing pruposes.
