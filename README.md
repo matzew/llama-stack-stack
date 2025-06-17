@@ -1,6 +1,6 @@
 # Riding a stack of Llamas 🦙
 
-Describes some experiments w/ the LLama Stack.
+Describes some experiments w/ the LLama Stack. The repository offers basically a LLS stack (Llama Stack Stack).
 
 ## Setup Kubernetes and Ollama Server
 
