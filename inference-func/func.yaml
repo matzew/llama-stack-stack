@@ -1,0 +1,18 @@
+# $schema: https://raw.githubusercontent.com/knative/func/refs/tags/v0.36.0/schema/func_yaml-schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/knative/func/refs/tags/v0.36.0/schema/func_yaml-schema.json
+specVersion: 0.36.0
+name: inference-func
+runtime: python
+registry: quay.io/matzew
+namespace: default
+created: 2025-07-02T11:31:18.140466264+02:00
+invoke: cloudevent
+build:
+  builder: host
+run:
+  envs:
+  - name: LSD_HOST
+    value: http://llamastackdistribution-sample-service.default.svc.cluster.local:8321
+deploy:
+  namespace: default
+  image: quay.io/matzew/inference-func@sha256:ac120a476375c74ba85542fbaa917e59db6ea6f6a575269322f5402ae3db3248
