@@ -22,7 +22,7 @@ class Function:
         configuration.
         """
         logging.info("Connecting to LLama Stack")
-        self.client = LlamaStackClient(base_url=os.environ.get("LSD_HOST", "http://localhost:8321"))
+        self.client = LlamaStackClient(base_url=os.environ.get("LLSD_HOST", "http://localhost:8321"))
         models = self.client.models.list()
 
         # Select the first LLM
