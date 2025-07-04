@@ -11,7 +11,7 @@ build:
   builder: host
 run:
   envs:
-  - name: LSD_HOST
+  - name: LLSD_HOST
     value: http://llamastackdistribution-sample-service.default.svc.cluster.local:8321
 deploy:
   namespace: default
