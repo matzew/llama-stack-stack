@@ -7,5 +7,6 @@ echo "Starting Kubernetes setup and Ollama deployment..."
 $(dirname "$0")/00-run-k8s.sh
 $(dirname "$0")/01-deploy-ollama.sh
 $(dirname "$0")/02-deploy-llama-stack.sh
+$(dirname "$0")/03-deploy-toolhive.sh
 
 echo "All commands executed successfully."
