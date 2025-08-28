@@ -53,6 +53,8 @@ spec:
 EOF
 ```
 
+> NOTE: There is also `./hack/02-deploy-llama-stack.sh` for the above.
+
 After a couple of minutes, the `Container` should be created, and you see:
 
 ```
